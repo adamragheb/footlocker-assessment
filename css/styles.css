@@ -1,0 +1,565 @@
+/* ***************
+    Global Styles */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,700&display=swap');
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #333333;
+  border: none;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  background: #E1E1E1;
+}
+div {}
+a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+  color: ;
+}
+ul {
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+  font-family: 'Montserrat', arial, sans-serif;
+  font-weight: 500;
+}
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.clear {
+  clear: both;
+}
+button {
+  margin-bottom: 20px;
+  padding: 0;
+  display: block;
+  font-family: 'Montserrat', arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  height: 60px;
+  color: #4B6DE7;
+  background: none;
+  vertical-align: middle;
+  border: 2px solid #4B6DE7;
+  text-align: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  outline: 0;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+}
+button.size {
+width: 100%;
+height: 100%;
+background: #FFFFFF;
+box-sizing: border-box;
+border: 0 !important;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #4B6DE7;
+}
+button.active {
+background: #EBEBEB;
+border: 1px solid #CBCBCB;
+box-sizing: border-box;
+  color: #BCBCBC;
+}
+button#addToCard {
+  background: #4B6DE7;
+  color: #FFFFFF;
+}
+button:focus {
+  color: ;
+}
+button:hover {
+  transition:
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="text"] {
+  display: inline;
+}
+::-webkit-input-placeholder {
+  color: #999999;
+}
+:-moz-placeholder {
+  color: #999999;
+}
+::-moz-placeholder {
+  color: #999999;
+}
+:-ms-input-placeholder {
+  color: #999999;
+}
+::-ms-input-placeholder {
+  color: #999999;
+}
+::placeholder {
+  color: #999999;
+}
+/* ****************
+        Sections */
+header {
+  background: #212222;
+  width: 100%;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+nav ul li a {
+  letter-spacing: 4px
+}
+.nav-bar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 25px;
+}
+.sq,
+.cr {
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  background: #C4C4C4;
+}
+.cr {
+  border-radius: 50%;
+}
+.placeholder-11 {
+  width: 11px;
+}
+#logo {
+  position: relative;
+  left: 25px;
+  width: 88px;
+  height: auto;
+  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#logo img {
+  display: block;
+}
+#search {
+  margin-right: 25px;
+  margin-left: auto;
+  color: #fff;
+  font-size: 26px
+}
+nav {
+  padding: 22px;
+}
+#menu-icon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: #333 url('../images/bars-solid-thin.png') center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-color 0.5s ease;
+}
+a:hover#menu-icon {
+  background-color: #333;
+}
+.current {
+  color: #007ABA
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+#productImg {
+  margin: 85px auto 0;
+  width: 100%;
+  position: relative;
+}
+
+.thumbnails {
+  width: 100%;
+  margin: 25px auto;
+  display: block;
+  padding: 0 25px;
+}
+.hero-img {
+  margin: 129px auto 0;
+  width: 100%;
+  display: block;
+  max-width: 391px;
+  max-height: 448px;
+}
+.thumbnails.main-image {
+  display: flex;
+  flex-flow: row nowrap;
+  bottom: 50px;
+  left: 50px;
+}
+.thumbnails img {
+  max-width: 65px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #333;
+}
+[class*=thumbnail-] {
+  margin-right: 15px;
+  width: 55px;
+  height: 55px;
+  background: #FFFFFF;
+  border: 1px solid #CBCBCB;
+  box-sizing: border-box;
+  background: url(../images/thumbnail-shirt.png) no-repeat center;
+}
+.thumb-title {
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6A6A6A;
+  width: 100%;
+}
+#productInfo {
+  padding: 25px;
+  background: #F9F9F9;
+  max-width: 712px;
+}
+[class*=product-] {
+  margin-bottom: 20px;
+}
+.product-gender {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #6A6A6A;
+  display: inline-block
+}
+.product-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  letter-spacing: 2px;
+  color: #353535;
+  text-transform: capitalize;
+}
+.product-title h3 {
+  font-weight: bold;
+}
+.product-price {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #353535;
+}
+.fa-star {
+  color: #999;
+}
+.checked {
+  color: #333;
+}
+.total-rate {
+  margin-left: 10px;
+  color: #666;
+}
+.product-description {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  color: #6A6A6A;
+}
+.product-colors.thumbnails,
+.product-size.thumbnails {
+  display: flex;
+  flex-flow: row wrap;
+}
+.product-colors.thumbnails .thumbnail-1 {
+  background: url(../images/color-shirt-1.png) center no-repeat;
+}
+.product-colors.thumbnails .thumbnail-2 {
+  background: url(../images/color-shirt-2.png) center no-repeat;
+}
+.product-colors.thumbnails .thumbnail-3 {
+  background: url(../images/color-shirt-3.png) center no-repeat
+}
+.product-colors.thumbnails .thumbnail-4 {
+  background: url(../images/color-shirt-4.png) center no-repeat;
+}
+.product-colors.thumbnails,
+.product-size.thumbnails {
+  padding: 0;
+}
+.product-border {
+  border-bottom: 1px solid #aaa;
+}
+.notes {
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 16px;
+align-items: center;
+
+color: #6A6A6A;
+}
+.info {
+  padding-left: 12px;
+  margin-left: 10px;
+  background: url(../images/info.png) no-repeat center;
+  background-size: contain;
+}
+/* ****************
+        Media Queries */
+@media only screen and (min-width: 960px) {
+  #productInfo {
+    padding: 113px !important;
+  }
+  .buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between
+  }
+  .buttons button {
+    flex-basis: 48%;
+    max-width: 229px;
+height: 70px;
+border: 2px solid #4B6DE7;
+box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .container {
+    display: flex;
+    flex-flow: row;
+  }
+  #logo {
+    left: 50;
+  }
+  .thumbnails.main-image {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+  .section {
+    flex-basis: 50%;
+  }
+  .hero-img {
+    margin: 0 auto;
+  width: 100%;
+  display: block;
+  max-width: 391px;
+  max-height: 448px;
+  position: absolute;
+  left: 168px;
+  top: calc(260px - 85px);
+}
+  #productImg {
+    position: relative;
+    margin: 0;
+  }
+  [class*=thumbnail-] {
+  width: 70px;
+  height: 70px;
+}
+  .product-gender {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #6A6A6A;
+  display: inline-block
+}
+  .product-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #353535;
+  text-transform: capitalize;
+}
+  .product-price {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #353535;
+}
+  #productInfo {
+    padding: 35px;
+  }
+  #search {
+    margin: 0;
+    margin-right: 50px;
+    order: 3;
+  }
+  #nav {
+    order: 2;
+  }
+  #menu-icon {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-image: none;
+  }
+  nav {
+    padding: 0;
+  }
+  nav ul {
+    margin: 0;
+    padding-left: 0;
+  }
+  nav ul li {
+    width: 150px;
+    text-align: center;
+  }
+  .current {
+    color: #FFFFFF;
+    position: relative;
+  }
+  .current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    max-width: 80px;
+    background-color: #4B6DE7;
+    bottom: -35px;
+    left: 0;
+  }
+  .path {
+    position: absolute;
+    top: calc(135px - 85px);
+    left: 50px;
+    font-family: Montserrat
+  }
+  .path a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    color: #6A6A6A;
+  }
+  .ic_chevron {
+    margin: 0 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    position: absolute;
+  }
+  #menu-icon {
+    display: inline-block;
+  }
+  nav ul,
+  nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #333;
+    right: 0px;
+    top: 60px;
+    width: 50%;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  #menu-icon:hover,
+  #menu-icon:active {
+    background: ;
+  }
+  .path {
+    display: none;
+    visibility: hidden;
+  }
+}
